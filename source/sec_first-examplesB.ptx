@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_first-examplesB" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Examples B</title>
+
+
+<example>
+  <statement>
+    <p>
+      Find the Thevenin's equivalent circuit.
+    </p>
+    <image source="thevenin1.png" width="35%"> </image>
+  </statement>
+  <solution>
+    <p>
+      Remove load resistance <m>R_{L}</m>  from the circuit, and find 
+      <m>V_{ab} =V_{th}.</m> Since the <m>2 \Omega</m> resistance is on open 
+      side there is no current passing through it. Hence <m>v_{ab} = I \times 5\Omega</m>. 
+    </p>
+    <image source="thevenin1a.png" width="35%"> </image>
+    <p>
+      Using Kirchoff's voltage law in a loop 
+      <men xml:id="eqn-thevn1">
+        10 = 10I+5I  \Rightarrow \quad I =\frac{10}{15}    =1.5A 
+      </men>
+      <men xml:id="eqn-thevn2">
+        \therefore\quad V_{ab} = V_{th} = 5 I = 5\times 1.5 = 7.5 V  
+      </men>
+    </p>
+    <image source="thevenin1b.png" width="35%"> </image>
+    <p>
+      Now short  10 V  source and look inside the circuit from open side to find the <m>R_{th}</m>. 
+      <men xml:id="eqn-thevn3">
+        R_{th} = 2+\{10||5\} = 2+\frac{10\times 5}{10+5} = \frac{16}{3} \Omega
+      </men>
+       </p>
+       <p>
+        Therefore the final circuit looks like 
+       </p>
+       <image source="thevenin1c.png" width="35%"> </image>
+  </solution>
+</example>
+
+
+<example>
+  <statement>
+    <p>
+      Find the Thevenin's equivalent circuit.
+    </p>
+    <image source="thevenin2.png" width="35%"> </image>
+  </statement>
+  <solution>
+    <image source="thevenin2a.png" width="35%"> </image>
+    <p>
+      Remove load resistance <m>R_{L}</m>  from the circuit, and find <m> V_{th}.</m> 
+      Since  -1 A  current is passing through <m>2 \Omega </m> resistance, 
+      <me>
+        v_{th} = -1 \times 2 =-2\,V.
+      </me>
+        </p>
+        <image source="thevenin2b.png" width="35%"> </image>
+        <p>
+          Now short 3 V  voltage source and open  -1 A current source to 
+          find <m> R_{th} = 2\Omega</m>. Since inner circuit is not closed.
+        </p>
+        <p>
+          Therefore the final circuit looks like 
+        </p>
+        <image source="thevenin1c.png" width="35%"> </image>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Find the Thevenin's equivalent circuit.
+    </p>
+    <image source="thevenin3.png" width="35%"> </image>
+  </statement>
+  <solution>
+          <image source="thevenin3a.png" width="35%"> </image>
+       <p>
+        From the closed loop, we have 
+          
+       <me>
+        20= 6i+2i+6i =14i
+      </me>
+      <me>
+        \therefore\quad i = \frac{20}{14} = \frac{10}{7}\,A
+      </me>
+      <me>
+        \therefore\quad V_{th} = 6\times i = 6(\frac{10}{7})= \frac{60}{7}\,V
+      </me>
+    </p>
+    <image source="thevenin3b.png" width="35%"> </image>
+    <p>
+      Now short 20 V  voltage source  to find <m> R_{th}.</m>
+      <me>
+        R_{th} = 2+\left(6||6\right) =6\,\Omega
+      </me>
+        </p>
+        <p>
+          Therefore the final circuit looks like 
+        </p>
+        <image source="thevenin1c.png" width="35%"> </image>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Find the Thevenin's equivalent circuit.
+    </p>
+    <image source="thevenin4.png" width="35%"> </image>
+  </statement>
+  <solution>
+    <p>
+      
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Find the Thevenin's equivalent circuit.
+    </p>
+    <image source="thevenin5.png" width="35%"> </image>
+  </statement>
+  <solution>
+    <p>
+      
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Find the Thevenin's equivalent circuit.
+    </p>
+    <image source="thevenin6.png" width="35%"> </image>
+  </statement>
+  <solution>
+    <p>
+      
+    </p>
+  </solution>
+</example>
+</section>
+
+
+
+
+

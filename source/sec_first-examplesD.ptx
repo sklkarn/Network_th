@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_first-examplesD" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Examples D</title>
+
+<example>
+  <statement>
+    <p>
+      Find voltage drop at <m>2\,\Omega</m> resistor using Milliman's theorem.
+    </p>
+    <image source="milliman1.png" width="35%"> </image>
+  </statement>
+  <solution>
+    <p>
+      
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Find voltage drop at <m>25\,\Omega </m> resistor using Milliman's theorem.
+    </p>
+    <image source="milliman2.png" width="35%"> </image>
+  </statement>
+  <solution>
+    <p>
+      
+    </p>
+  </solution>
+</example>
+
+
+</section>
+
+
+
+
+

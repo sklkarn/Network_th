@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_first-intro" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Linear and Non-linear circuit:</title>
+
+  <introduction>
+      <p>
+      Circuit whose elements follow Ohm's law or has linear relationship 
+      between current and voltage is known as linear circuit, otherwise it is a non-linear circuit. 
+     </p>
+</introduction>
+
+<subsection xml:id="subsec-power_sources">
+  <title>Independent and Dependent power sources:</title>
+  <p>
+    A device or energy source which provides voltage or current in the circuit is 
+    known as power source. It is of two types. A device whose power is independent 
+    on the other element/s of the circuit is known as independent source, otherwise 
+    it is a dependent source. Typically independent sources are of two terminal devices 
+    and dependent sources are of four terminal devices. The dependent sources are also 
+    known as controlled sources. A controlled current source can be controlled by current 
+    or voltage in the circuit, similarly controlled voltage source can also be controlled by 
+    current or voltage in the circuit. The circuit symbols of some of the components are given here. 
+  </p>
+  <figure xml:id="CircuitSymbol">
+    <caption></caption>
+    <image source="CircuitSymbol.png" width="75%"/>
+    </figure>
+  <p>
+   <term> Note:</term> It is considered that an ideal voltage source has a negligible 
+   internal resistance and an ideal current source has an infinite internal resistance. 
+   Ideal voltmeter has an infinite internal resistance and ideal ammeter has a negligible 
+   internal resistance.
+  </p>
+</subsection>
+  
+<subsection xml:id="subsec-network">
+  <title>Network Theorem</title>
+ <p>
+
+ </p>
+</subsection>
+
+  <subsection xml:id="subsec-superposition">
+    <title>Superposition Theorem:</title>
+    <p>
+     It states that total voltage drop at an element of the circuit or total current through 
+     an element of the  circuit is the algebraic sum of the voltages across (or currents through) 
+     this element due to individual sources as if they were acting on it independently. 
+     Superposition theorem will be helpful when more than one type of sources are acting in 
+     a linear circuit. 
+    </p>
+    <p>
+    <ol>
+      <li>
+        <p>
+          <term>Steps to use Superposition theorem:</term> 
+          <em>Step 1:</em> Identify an element as a load resistor across which voltage or current is 
+          to be calculated.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Step 2:</em> Remove all the sources from the circuit except one independent source 
+          and leave all the dependent sources as they are. 
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Step 3:</em> When removing sources make sure the voltage sources are replaced by 
+          short circuit or leaving behind its internal resistances and current sources are 
+          replaced by open circuit. 
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Step 4:</em> Find the current or voltage across the load for each of the individual 
+          sources at a time using basic circuit analysis tools such as Ohm's law and Kirchhoff's law.
+        </p>
+      </li>
+      <li>
+        <p>
+         <em> Step 5:</em> Find the algebraic sum of individual currents through or voltages 
+         across the load.
+        </p>
+      </li>
+    </ol>
+  </p>
+  </subsection>
+
+  
+
+
+
+<subsection xml:id="subsec-thevn_thrm">
+  <title>Thevenin's Theorem:</title>
+
+    <p>
+      It states that any complex or a linear circuit network with current and 
+      voltage sources can be replaced by an equivalent circuit containing a single 
+      independent voltage source <m>V_{Th}</m> with single resistor <m>R_{Th}</m> in a series.
+    </p>
+<p>
+    <ol>
+      <li>
+        <p>
+          <term>Steps to use Superposition theorem:</term> 
+          <em>Step 1:</em> Open the load resistor.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Step 2:</em> Calculate the open circuit voltage and call it a Thevenin Voltage, <m>V_{Th}</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Step 3:</em> Open current sources and short voltage sources. 
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Step 4:</em> Calculate the open circuit resistance and call it a Thevenin Resistance, <m>R_{Th}</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+         <em> Step 5:</em> Redraw the circuit with calculated <m>V_{Th}</m> as a voltage source, 
+         <m>R_{Th}</m> as a series resistance, and finally connect the load resistor.
+        </p>
+      </li>
+    </ol>
+  </p>
+    <p>
+      Now solve using basic circuit analysis tools such as Ohm's law and Kirchhoff's law.
+    </p>
+    <figure xml:id="Thevenin">
+      <caption></caption>
+      <image source="Thevenin.png" width="75%"/>
+      </figure>
+</subsection>
+
+
+<subsection xml:id="subsec-norton">
+  <title>Norton's Theorem:</title>
+  <p>
+    It states that any complex or a linear circuit network with current and voltage 
+    sources can be replaced by an equivalent circuit containing a single independent 
+    current source <m>I_{N}</m> with a single parallel resistor <m>R_{N}</m>.
+  </p>
+<p>
+  <ol>
+    <li>
+      <p>
+        <term>Steps to use Superposition theorem:</term> 
+        <em>Step 1:</em> Short the load resistor.
+      </p>
+    </li>
+    <li>
+      <p>
+        <em>Step 2:</em> Calculate the short circuit current and call it Norton Current, <m>I_{N}</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        <em>Step 3:</em> Open current sources, short voltage sources, and open load resistor. 
+      </p>
+    </li>
+    <li>
+      <p>
+        <em>Step 4:</em>  Calculate the open circuit resistance and call it Norton Resistance, <m>R_{N}</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+       <em> Step 5:</em> Redraw the circuit with calculated <m>I_{N}</m> as a current source, 
+       <m>R_{N}</m> as a parallel resistance, and finally connect the load resistor.
+      </p>
+    </li>
+  </ol>
+</p>
+
+  <p>
+    Now solve using basic circuit analysis tools such as Ohm's law and Kirchhoff's law.
+  </p>
+  <figure xml:id="Norton">
+    <caption></caption>
+    <image source="Norton.png" width="75%"/>
+    </figure>
+    <p>
+      <em>It is useful to convert current source into voltage source and vice a versa 
+      sometime to solve the complex circuit</em>. Thevenin's logic can be applied to 
+      the voltage source with a resistor in series and Norton's logic can be 
+      applied to the current source with a resistor in parallel to convert 
+      from one another. They are interchangeable.
+    </p>
+</subsection>
+
+
+<subsection xml:id="subsec-millman">
+  <title>Millman's Theorem:</title>
+  <p>
+    It states that when a number of voltage sources <m>(V_1, V_2, V_3, \cdots, V_n)</m> and their 
+    respective (internal) resistors <m>(R_1, R_2, R_3, \cdots, R_n)</m> are in parallel then the 
+    arrangement can be replaced by a single equivalent voltage source V in series with an equivalent series resistance R. 
+  </p>
+  <p>
+    <ol>
+      <li>
+        <p>
+          <term>Steps to use Millman's theorem:</term> 
+          <em>Step 1:</em> The load must be removed.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Step 2:</em> Short the load terminal temporarily to calculate total current in the circuit.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Step 3:</em> The voltage sources is replaced with short circuits.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Step 4:</em>  Calculate the equivalent resistance, <m>R</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+         <em> Step 5:</em> Use Ohm's law to calculate equivalent voltage, <m>V</m>.
+        </p>
+      </li>
+    </ol>
+  </p>
+  <figure xml:id="Vab">
+    <caption></caption>
+    <image source="Vab.png" width="75%"/>
+    </figure>
+</subsection>
+
+
+<subsection xml:id="subsec-reciprocity">
+  <title>Reciprocity Theorem:</title>
+  <p>
+    It states that in a linear and bilateral circuit the current due to a single independent source 
+    in any particular branch of circuit is equal to the  current in the original branch where the 
+    source was placed when the source is shifted to that particular branch of circuit. In other words, 
+    the ratio of response to excitation is constant in the circuit where voltage source (or excitation) 
+    and current response (ammeter) can be interchangeable.
+  </p>
+  <p>
+    <ol>
+      <li>
+        <p>
+          <term>Steps to use Reciprocity Theorem:</term> 
+          <em>Step 1:</em> First check if the given circuit is a linear and bilateral (reciprocal circuit) with only one source.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Step 2:</em> Select the branch between which reciprocity is to be checked. 
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Step 3:</em>  Find the value of current in branch using basic circuit analysis.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Step 4:</em>  The voltage source is interchanged between the branches concerned.
+        </p>
+      </li>
+      <li>
+        <p>
+         <em> Step 5:</em> Calculate the current in the branch where the voltage source was existing earlier.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Step 6:</em> Check that current calculated in <term>step 3</term> and <term>step 5</term> are same. 
+        </p>
+      </li>
+    </ol>
+  </p>
+  <figure xml:id="reciprocity1">
+    <caption></caption>
+    <image source="reciprocity1.png" width="75%"/>
+    </figure>
+</subsection>
+  </section>
+

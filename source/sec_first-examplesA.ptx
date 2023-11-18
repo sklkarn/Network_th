@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_first-examplesA" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Examples A</title>
+
+
+
+ 
+  <example>
+    <statement>
+      <p>
+        Find the current through <m>4\,\Omega</m> resistance.
+      </p>
+      <image source="super1.png" width="35%"> </image>
+    </statement>
+    <solution>
+      <p>
+        Remove 4 V source and find <m> I_{1}</m> in the circuit. 
+        <me>
+          I_{1b} = \frac{V}{R_{eq}} = \frac{2}{[2+6||4]} =\frac{10}{22}
+        </me>
+        <me>
+          \therefore\quad   I_{1} = I_{1b}\times\frac{6}{6+4} = \frac{6}{22} \,A
+        </me>
+          </p>
+          <image source="super1a.png" width="35%"> </image>
+          <p>
+            Remove 2 V source and find <m>I_{2}</m> in the circuit.
+            <me>
+              I_{2b} = \frac{V}{R_{eq}} = \frac{4}{[6+2||4]} =\frac{12}{22}
+            </me>
+            <me>
+              \therefore\quad   I_{2} = I_{2b}\times\frac{2}{2+4} = \frac{4}{22} \,A
+            </me>
+               </p>
+          <image source="super1b.png" width="35%"> </image>
+          <p>
+            <me>
+              \therefore\quad I = I_{1}+I_{2} = \frac{6}{22}+\frac{4}{22} = \frac{10}{22} \,A
+            </me>
+             </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Find the current i in the circuit.
+      </p>
+      <image source="super2.png" width="35%"> </image>
+    </statement>
+    <solution>
+      <p>
+        Remove 4 V voltage source and open 2 A current source from the circuit to 
+        find <m>i_{1}.</m> Using Kirchhoff's voltage law: 
+        <me>
+          3 + 0.5\,i_{1} = (2+4)\,i_{1}
+        </me>
+        <me>
+          \therefore\quad   i_{1} = \frac{3}{5.5} = \frac{6}{11} \,A
+        </me>
+          </p>
+          <image source="super2a.png" width="35%"> </image>
+      <p>
+        Remove  3 V  voltage source and open  2 A  current source from the circuit to 
+        find <m>i_{2}. </m> Using Kirchhoff's voltage law: 
+        <me>
+          0.5\,i_{2}-4 = 2\,i_{2} + 4\,i_{2}
+        </me>
+        <me>
+          \therefore\quad   i_{2} = -\frac{4}{5.5} = -\frac{8}{11}\, A 
+        </me>
+      </p>
+      <image source="super2b.png" width="35%"> </image>
+      <p>
+        Remove 3 V and  4 V   voltage sources from the circuit to find <m>i_{3}.</m> 
+        From Kirchhoff's current law:
+        <me>
+          i_{t} = 2+i_{3}
+        </me>
+       From Kirchhoff's voltage law in outer loop: 
+       <me>
+        0.5i_{3}= 2i_{3} + 4i_{t} = 2i_{3} + 4(2+i_{3})
+       </me>
+       <me>
+        \therefore\quad i_{3} = -\frac{16}{11} \,A
+       </me>
+          </p>
+          <image source="super2c.png" width="35%"> </image>
+          <p>
+            <me>
+              \therefore\quad i = i_{1}+i_{2} +i_{3}= \frac{6}{11}-\frac{8}{11} -\frac{16}{11} =- \frac{18}{11} \,A
+            </me>
+               </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Find the voltage drop <m>v_{x} </m> at the given resistance in the circuit.
+      </p>
+      <image source="super3.png" width="35%"> </image>
+    </statement>
+    <solution>
+      <p>
+        Open 10 A  current source from the circuit to find <m> I_{1}.</m> 
+        Using Kirchhoff's voltage law in loop <m> I_{1}</m>:
+        <men xml:id="eqn-super1">
+          20 = 2I_{1} + 5I_{1}-5I_{2} = 7I_{1} -5I_{2} 
+        </men>
+       From loop <m>I_{2}</m>: 
+       <men xml:id="eqn-super2">
+        I_{2} = 2v_{x1}
+       </men>
+       But, <m> v_{x1} </m> is a voltage drop at  <m>5 \,\Omega</m> resistance. 
+       <men xml:id="eqn-super3">
+        \therefore \quad v_{x1} = 5(I_{1}-I_{2}) 
+       </men>
+        </p>
+        <image source="super3a.png" width="35%"> </image>
+        <p>
+          From eqns.<xref ref="eqn-super2"/> and <xref ref="eqn-super3"/>, we have -
+          <me>
+            5(I_{1}-I_{2}) = \frac{I_{2}}{2}
+          </me>
+          <men xml:id="eqn-super4">
+            or,  \quad 10I_{1}-11I_{2}= 0 
+          </men>
+        On solving eqns. <xref ref="eqn-super1"/> and <xref ref="eqn-super4"/>, we get -
+        <me>
+          I_{1} = \frac{220}{27} \,A;
+        </me>
+        <me>
+          \text{and}\quad I_{2} = \frac{200}{27} \,A
+        </me>
+        <men xml:id="eqn-super5">
+          \therefore\quad v_{x1} = \frac{I_{2}}{2} = \frac{200}{27\times 2} = 3.7\, V 
+        </men>
+        </p>
+        <image source="super3b.png" width="35%"> </image>
+        <p>
+          Now, short 20 V source and leave 10 A current source active in the circuit. 
+          From loop of <m>I_{1}</m> 
+          <me>
+            2I_{1} + 5I_{1}-2I_{3}-5I_{2} = 0
+          </me>
+          <men xml:id="eqn-super6">
+            7I_{1} -5I_{2} -2I_{3} = 0  
+          </men>
+        From loop of <m>I_{2}</m>: 
+        <men xml:id="eqn-super7">
+          I_{2} = 2v_{x2} 
+        </men>
+        But, <m>v_{x2}</m> is a voltage drop at <m>5 \,\Omega</m> resistance.
+        <men xml:id="eqn-super8">
+          \therefore \quad v_{x2} = 5(I_{1}-I_{2}) 
+        </men>
+           </p>
+           <p>
+            From loop of <m>I_{3}</m>: 
+            <men xml:id="eqn-super9">
+              I_{3} = -10 A 
+            </men>
+            From eqns. <xref ref="eqn-super6"/> and <xref ref="eqn-super9"/>, we have -
+            <men xml:id="eqn-super10">
+              7I_{1} - 5I_{2} = -20 
+            </men>
+          From eqns. <xref ref="eqn-super7"/> and <xref ref="eqn-super8"/>, we have -
+          <men xml:id="eqn-super11">
+            10I_{1} - 11I_{2} = 0 
+          </men>
+        On solving eqns. <xref ref="eqn-super10"/> and <xref ref="eqn-super11"/>, we get -
+        <me>
+          I_{1} = -11\,A;
+        </me>
+        <me>
+          \text{and}\quad I_{2} = -\frac{220}{22} \,A 
+        </me>
+     <men xml:id="eqn-super12">
+      \therefore\quad v_{x2} = \frac{I_{2}}{2} =- \frac{220}{22\times 2} = -5.0\, V 
+     </men>
+     Hence, 
+     <me>
+      v_{x} = v_{x1}+v_{x2} = 3.7-5.0 = -1.3\,V
+     </me>
+       </p>
+    </solution>
+  </example>
+
+
+  <example>
+    <statement>
+      <p>
+        Find the current <m>I_{o} </m>  in the circuit.
+      </p>
+      <image source="super5.png" width="35%"> </image>
+    </statement>
+    <solution>
+      <p>
+        Short circuit 4 V   voltage source in the circuit to find <m>I_{1}.</m> 
+        Using nodal analysis:
+<men xml:id="eqn-super13">
+  I_{1} = I_{1}'+I_{o}' +2v_{o}' = \frac{V-1}{2}  +\frac{V-0}{3} +2v_{o}'   
+</men>
+Here V  is the voltage at upper nodes.
+      </p>
+      <image source="super5a.png" width="35%"> </image>
+    <p>
+      Now, <m> V=v_{o}'.</m> Also,
+      <me>
+        \frac{V}{3}=  \frac{V-1}{2} \quad \Rightarrow \quad  V=3 \,V 
+      </me>
+      
+      <men xml:id="eqn-super14">
+        \therefore \quad v_{o}' =3V    
+      </men>
+      <men xml:id="eqn-super15">
+        \text{and},\quad I_{o}' = \frac{V-0}{3} =\frac{3}{3} =1\,A   
+      </men>
+      <men xml:id="eqn-super16">
+        \text{also},\quad I_{1} = 8\,A 
+      </men>
+    </p>
+    <image source="super5b.png" width="35%"> </image>
+      <p>
+        Now short 1 V source to find <m>I_{2} </m>.
+<men xml:id="eqn-super17">
+  I_{2} = I_{1}"+I_{o}" +2v_{o}" = \frac{V}{2}  +\frac{V}{3} +2v_{o}'   
+</men>
+Now, <m> V=v_{o}"=4. </m> Also,
+<men xml:id="eqn-super18">
+  I_{o}" = \frac{V}{3} = \frac{4}{3}\,A 
+</men>
+<men xml:id="eqn-super19">
+  I_{2} = \frac{17v_{o}"}{6} = 34/3\,A 
+</men>
+
+Hence, 
+<me>
+  I_{o}=I_{o}'+I_{o}" = 1+\frac{4}{3} =\frac{7}{3}\,A 
+</me>
+      </p>
+    </solution>
+  </example>
+
+</section>
+
+
+
+
+

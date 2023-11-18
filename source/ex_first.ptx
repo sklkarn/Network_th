@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ex_first" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- You can ommit the title and just get the default "Exercises" -->
+  <title>Exercise</title>
+  
+ <exercise>
+  <p>
+    Find the current <m>I_{o}</m> and voltage <m>V_{o}</m> in the circuit.
+  </p>
+  <image source="super6.png" width="35%"> </image>
+ </exercise>
+
+ <exercise>
+  <p>
+    Find the open circuit voltage <m> V_{oc}</m> using Thevenin's theorem.
+  </p>
+  <image source="thevenin5.png" width="35%"> </image>
+ </exercise>
+
+
+ <exercise>
+  <p>
+    Find current <m> i_{x}</m> using Norton's theorem if load resistance is <m>10\,\Omega</m>.
+  </p>
+  <image source="norton3.png" width="35%"> </image>
+ </exercise>
+ 
+
+ <exercise>
+  <p>
+    Find equivalent voltage <m> V_{eq}</m> using Milliman's theorem.
+  </p>
+  <image source="milliman3.png" width="35%"> </image>
+ </exercise>
+ </exercises>
+

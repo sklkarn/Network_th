@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This file contains all of the "backmatter" material  -->
+<!-- We show examples of how to have hints to divisional  -->
+<!-- excercies appear in a section, and then their        -->
+<!-- solutions in the next.  Then there is an appendix    -->
+<!-- with all notation generated, and finally the index.  -->
+<backmatter xml:id="meta_backmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Backmatter</title>
+  
+
+      <appendix>
+        <title>List of Symbols</title>
+        <notation-list/>
+      </appendix>
+
+      <appendix xml:id="append_partdiff">
+        <title>   </title>
+                  
+         <p>
+          
+         </p>
+      </appendix>
+    
+
+
+      <index>
+        <title>Index</title>
+        <index-list/> 
+        </index>
+
+
+<references xml:id="refs-list">
+  <biblio> Circuit Analysis: Theory and Practice, Robbins, Cengage Learning, 2007. </biblio>
+ 
+ </references>
+
+
+
+</backmatter>
+

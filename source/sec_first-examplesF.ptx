@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_first-examplesF" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Source Transformation</title>
+
+<example>
+  <statement>
+    <p>
+      Find the voltage <m> v_{o}</m> in the circuit.
+    </p>
+    <image source="super4.png" width="35%"> </image>
+  </statement>
+  <solution>
+    <p>
+      
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Find the voltage <m> v_{o}</m> in the circuit.
+    </p>
+    <image source="st2.png" width="35%"> </image>
+  </statement>
+  <solution>
+    <p>
+      
+    </p>
+  </solution>
+</example>
+
+
+<example>
+  <statement>
+    <p>
+      Find the voltage <m> v_{o}</m> in the circuit.
+    </p>
+    <image source="st3.png" width="35%"> </image>
+  </statement>
+  <solution>
+    <p>
+      
+    </p>
+  </solution>
+</example>
+
+</section>
+
+
+
+
+

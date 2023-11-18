@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_first-examplesE" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Examples E</title>
+
+<example>
+  <statement>
+    <p>
+      Show the validity of reciprocity theorem in the figure below.
+    </p>
+    <image source="reciprocity.png" width="35%"> </image>
+  </statement>
+  <solution>
+    <p>
+      
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Show the validity of reciprocity theorem in the figure below.
+    </p>
+    <image source="reciprocity2.png" width="35%"> </image>
+  </statement>
+  <solution>
+    <p>
+      
+    </p>
+  </solution>
+</example>
+
+
+</section>
+
+
+
+
+
