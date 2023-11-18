@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Linear and Non-linear circuit:</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="DC Circuit Analysis">
+<meta property="book:author" content="Sunil Karna">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="dc_circuit.html"><span class="title">DC Circuit Analysis:</span> <span class="subtitle">Network Theorem</span></a></h1>
+<p class="byline">Sunil Karna</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="ch_first.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="ch_first.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="sec_first-examplesA.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\T}{\mathcal T}
+\newcommand\comb[2]{^{#1}C{_{#2}}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth3"><ul class="structural">
+<li>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li><div class="toc-item"><a href="meta_frontmatter-preface.html" class="internal"><span class="title">Preface</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch_first.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
+<ul class="structural">
+<li class="active">
+<div class="toc-item"><a href="sec_first-intro.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Linear and Non-linear circuit:</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec_first-intro.html#subsec-power_sources" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Independent and Dependent power sources:</span></a></div></li>
+<li><div class="toc-item"><a href="sec_first-intro.html#subsec-network" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Network Theorem</span></a></div></li>
+<li><div class="toc-item"><a href="sec_first-intro.html#subsec-superposition" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Superposition Theorem:</span></a></div></li>
+<li><div class="toc-item"><a href="sec_first-intro.html#subsec-thevn_thrm" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Thevenin’s Theorem:</span></a></div></li>
+<li><div class="toc-item"><a href="sec_first-intro.html#subsec-norton" class="internal"><span class="codenumber">1.1.5</span> <span class="title">Norton’s Theorem:</span></a></div></li>
+<li><div class="toc-item"><a href="sec_first-intro.html#subsec-millman" class="internal"><span class="codenumber">1.1.6</span> <span class="title">Millman’s Theorem:</span></a></div></li>
+<li><div class="toc-item"><a href="sec_first-intro.html#subsec-reciprocity" class="internal"><span class="codenumber">1.1.7</span> <span class="title">Reciprocity Theorem:</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec_first-examplesA.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Examples A</span></a></div></li>
+<li><div class="toc-item"><a href="sec_first-examplesB.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Examples B</span></a></div></li>
+<li><div class="toc-item"><a href="sec_first-examplesC.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Examples C</span></a></div></li>
+<li><div class="toc-item"><a href="ex_first.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="meta_backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="appendix-1.html" class="internal"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></div></li>
+<li><div class="toc-item"><a href="append_partdiff.html" class="internal"><span class="codenumber">B</span> <span class="title"></span></a></div></li>
+<li><div class="toc-item"><a href="index-1.html" class="internal"><span class="title">Index</span></a></div></li>
+<li><div class="toc-item"><a href="refs-list.html" class="internal"><span class="title">References</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_first-intro"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.1</span> <span class="title">Linear and Non-linear circuit:</span>
+</h2>
+<section class="introduction" id="introduction-2"><div class="para" id="p-4">Circuit whose elements follow Ohm’s law or has linear relationship between current and voltage is known as linear circuit, otherwise it is a non-linear circuit.</div></section><section class="subsection" id="subsec-power_sources"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.1</span> <span class="title">Independent and Dependent power sources:</span>
+</h3>
+<div class="para" id="p-5">A device or energy source which provides voltage or current in the circuit is known as power source. It is of two types. A device whose power is independent on the other element/s of the circuit is known as independent source, otherwise it is a dependent source. Typically independent sources are of two terminal devices and dependent sources are of four terminal devices. The dependent sources are also known as controlled sources. A controlled current source can be controlled by current or voltage in the circuit, similarly controlled voltage source can also be controlled by current or voltage in the circuit. The circuit symbols of some of the components are given here.</div>
+<figure class="figure figure-like" id="CircuitSymbol"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/CircuitSymbol.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="p-6">
+<dfn class="terminology">Note:</dfn> It is considered that an ideal voltage source has a negligible internal resistance and an ideal current source has an infinite internal resistance. Ideal voltmeter has an infinite internal resistance and ideal ammeter has a negligible internal resistance.</div></section><section class="subsection" id="subsec-network"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.2</span> <span class="title">Network Theorem</span>
+</h3>
+<div class="para" id="p-7"></div></section><section class="subsection" id="subsec-superposition"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.3</span> <span class="title">Superposition Theorem:</span>
+</h3>
+<div class="para" id="p-8">It states that total voltage drop at an element of the circuit or total current through an element of the  circuit is the algebraic sum of the voltages across (or currents through) this element due to individual sources as if they were acting on it independently. Superposition theorem will be helpful when more than one type of sources are acting in a linear circuit.</div>
+<div class="para logical" id="p-9"><ol class="decimal">
+<li id="li-1"><div class="para" id="p-10">
+<dfn class="terminology">Steps to use Superposition theorem:</dfn> <em class="emphasis">Step 1:</em> Identify an element as a load resistor across which voltage or current is to be calculated.</div></li>
+<li id="li-2"><div class="para" id="p-11">
+<em class="emphasis">Step 2:</em> Remove all the sources from the circuit except one independent source and leave all the dependent sources as they are.</div></li>
+<li id="li-3"><div class="para" id="p-12">
+<em class="emphasis">Step 3:</em> When removing sources make sure the voltage sources are replaced by short circuit or leaving behind its internal resistances and current sources are replaced by open circuit.</div></li>
+<li id="li-4"><div class="para" id="p-13">
+<em class="emphasis">Step 4:</em> Find the current or voltage across the load for each of the individual sources at a time using basic circuit analysis tools such as Ohm’s law and Kirchhoff’s law.</div></li>
+<li id="li-5"><div class="para" id="p-14">
+<em class="emphasis">Step 5:</em> Find the algebraic sum of individual currents through or voltages across the load.</div></li>
+</ol></div></section><section class="subsection" id="subsec-thevn_thrm"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.4</span> <span class="title">Thevenin’s Theorem:</span>
+</h3>
+<div class="para" id="p-15">It states that any complex or a linear circuit network with current and voltage sources can be replaced by an equivalent circuit containing a single independent voltage source <span class="process-math">\(V_{Th}\)</span> with single resistor <span class="process-math">\(R_{Th}\)</span> in a series.</div>
+<div class="para logical" id="p-16"><ol class="decimal">
+<li id="li-6"><div class="para" id="p-17">
+<dfn class="terminology">Steps to use Superposition theorem:</dfn> <em class="emphasis">Step 1:</em> Open the load resistor.</div></li>
+<li id="li-7"><div class="para" id="p-18">
+<em class="emphasis">Step 2:</em> Calculate the open circuit voltage and call it a Thevenin Voltage, <span class="process-math">\(V_{Th}\text{.}\)</span>
+</div></li>
+<li id="li-8"><div class="para" id="p-19">
+<em class="emphasis">Step 3:</em> Open current sources and short voltage sources.</div></li>
+<li id="li-9"><div class="para" id="p-20">
+<em class="emphasis">Step 4:</em> Calculate the open circuit resistance and call it a Thevenin Resistance, <span class="process-math">\(R_{Th}\text{.}\)</span>
+</div></li>
+<li id="li-10"><div class="para" id="p-21">
+<em class="emphasis">Step 5:</em> Redraw the circuit with calculated <span class="process-math">\(V_{Th}\)</span> as a voltage source, <span class="process-math">\(R_{Th}\)</span> as a series resistance, and finally connect the load resistor.</div></li>
+</ol></div>
+<div class="para" id="p-22">Now solve using basic circuit analysis tools such as Ohm’s law and Kirchhoff’s law.</div>
+<figure class="figure figure-like" id="Thevenin"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/Thevenin.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.2<span class="period">.</span></span><span class="space"> </span></figcaption></figure></section><section class="subsection" id="subsec-norton"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.5</span> <span class="title">Norton’s Theorem:</span>
+</h3>
+<div class="para" id="p-23">It states that any complex or a linear circuit network with current and voltage sources can be replaced by an equivalent circuit containing a single independent current source <span class="process-math">\(I_{N}\)</span> with a single parallel resistor <span class="process-math">\(R_{N}\text{.}\)</span>
+</div>
+<div class="para logical" id="p-24"><ol class="decimal">
+<li id="li-11"><div class="para" id="p-25">
+<dfn class="terminology">Steps to use Superposition theorem:</dfn> <em class="emphasis">Step 1:</em> Short the load resistor.</div></li>
+<li id="li-12"><div class="para" id="p-26">
+<em class="emphasis">Step 2:</em> Calculate the short circuit current and call it Norton Current, <span class="process-math">\(I_{N}\text{.}\)</span>
+</div></li>
+<li id="li-13"><div class="para" id="p-27">
+<em class="emphasis">Step 3:</em> Open current sources, short voltage sources, and open load resistor.</div></li>
+<li id="li-14"><div class="para" id="p-28">
+<em class="emphasis">Step 4:</em>  Calculate the open circuit resistance and call it Norton Resistance, <span class="process-math">\(R_{N}\text{.}\)</span>
+</div></li>
+<li id="li-15"><div class="para" id="p-29">
+<em class="emphasis">Step 5:</em> Redraw the circuit with calculated <span class="process-math">\(I_{N}\)</span> as a current source, <span class="process-math">\(R_{N}\)</span> as a parallel resistance, and finally connect the load resistor.</div></li>
+</ol></div>
+<div class="para" id="p-30">Now solve using basic circuit analysis tools such as Ohm’s law and Kirchhoff’s law.</div>
+<figure class="figure figure-like" id="Norton"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/Norton.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="p-31">
+<em class="emphasis">It is useful to convert current source into voltage source and vice a versa sometime to solve the complex circuit</em>. Thevenin’s logic can be applied to the voltage source with a resistor in series and Norton’s logic can be applied to the current source with a resistor in parallel to convert from one another. They are interchangeable.</div></section><section class="subsection" id="subsec-millman"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.6</span> <span class="title">Millman’s Theorem:</span>
+</h3>
+<div class="para" id="p-32">It states that when a number of voltage sources <span class="process-math">\((V_1, V_2, V_3, \cdots, V_n)\)</span> and their respective (internal) resistors <span class="process-math">\((R_1, R_2, R_3, \cdots, R_n)\)</span> are in parallel then the arrangement can be replaced by a single equivalent voltage source V in series with an equivalent series resistance R.</div>
+<div class="para logical" id="p-33"><ol class="decimal">
+<li id="li-16"><div class="para" id="p-34">
+<dfn class="terminology">Steps to use Millman’s theorem:</dfn> <em class="emphasis">Step 1:</em> The load must be removed.</div></li>
+<li id="li-17"><div class="para" id="p-35">
+<em class="emphasis">Step 2:</em> Short the load terminal temporarily to calculate total current in the circuit.</div></li>
+<li id="li-18"><div class="para" id="p-36">
+<em class="emphasis">Step 3:</em> The voltage sources is replaced with short circuits.</div></li>
+<li id="li-19"><div class="para" id="p-37">
+<em class="emphasis">Step 4:</em>  Calculate the equivalent resistance, <span class="process-math">\(R\text{.}\)</span>
+</div></li>
+<li id="li-20"><div class="para" id="p-38">
+<em class="emphasis">Step 5:</em> Use Ohm’s law to calculate equivalent voltage, <span class="process-math">\(V\text{.}\)</span>
+</div></li>
+</ol></div>
+<figure class="figure figure-like" id="Vab"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/Vab.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.4<span class="period">.</span></span><span class="space"> </span></figcaption></figure></section><section class="subsection" id="subsec-reciprocity"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.7</span> <span class="title">Reciprocity Theorem:</span>
+</h3>
+<div class="para" id="p-39">It states that in a linear and bilateral circuit the current due to a single independent source in any particular branch of circuit is equal to the  current in the original branch where the source was placed when the source is shifted to that particular branch of circuit. In other words, the ratio of response to excitation is constant in the circuit where voltage source (or excitation) and current response (ammeter) can be interchangeable.</div>
+<div class="para logical" id="p-40"><ol class="decimal">
+<li id="li-21"><div class="para" id="p-41">
+<dfn class="terminology">Steps to use Reciprocity Theorem:</dfn> <em class="emphasis">Step 1:</em> First check if the given circuit is a linear and bilateral (reciprocal circuit) with only one source.</div></li>
+<li id="li-22"><div class="para" id="p-42">
+<em class="emphasis">Step 2:</em> Select the branch between which reciprocity is to be checked.</div></li>
+<li id="li-23"><div class="para" id="p-43">
+<em class="emphasis">Step 3:</em>  Find the value of current in branch using basic circuit analysis.</div></li>
+<li id="li-24"><div class="para" id="p-44">
+<em class="emphasis">Step 4:</em>  The voltage source is interchanged between the branches concerned.</div></li>
+<li id="li-25"><div class="para" id="p-45">
+<em class="emphasis">Step 5:</em> Calculate the current in the branch where the voltage source was existing earlier.</div></li>
+<li id="li-26"><div class="para" id="p-46">
+<em class="emphasis">Step 6:</em> Check that current calculated in <dfn class="terminology">step 3</dfn> and <dfn class="terminology">step 5</dfn> are same.</div></li>
+</ol></div>
+<figure class="figure figure-like" id="reciprocity1"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/reciprocity1.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.5<span class="period">.</span></span><span class="space"> </span></figcaption></figure></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="ch_first.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_first-examplesA.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
